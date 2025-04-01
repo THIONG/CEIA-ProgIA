@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.routes.upload import router as upload_router
 
-app = FastAPI(debug=True)
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,

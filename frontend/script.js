@@ -40,7 +40,7 @@ uploadButton.addEventListener("click", async function () {
 
         const result = await response.json();
         const rekognitionData = result.rekognition_data;
-        labelsTable.innerHTML = "";  
+        labelsTable.innerHTML = "";
         results.style.display = "block";
 
         rekognitionData.Labels.forEach(label => {
